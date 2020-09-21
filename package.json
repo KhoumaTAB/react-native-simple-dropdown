@@ -1,0 +1,30 @@
+{
+  "name": "react-native-simple-dropdown",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NovaaHD/react-native-simple-dropdown.git"
+  },
+  "author": "Michaël BOURMEAU <michael.bourmeau@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NovaaHD/react-native-simple-dropdown/issues"
+  },
+  "dependencies": {
+    "react-native-material-buttons": "^0.6.0"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "ios",
+    "android",
+    "dropdown",
+    "simple"
+  ],
+  "homepage": "https://github.com/NovaaHD/react-native-simple-dropdown#readme"
+}
