@@ -11,7 +11,7 @@ import {
   Platform,
 } from "react-native";
 
-import DropdownItem from "../item";
+import DropdownItem from "./item";
 import styles from "./styles";
 
 export default class Dropdown extends Component {
