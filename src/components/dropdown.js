@@ -11,11 +11,54 @@ import {
   Platform,
 } from "react-native";
 
-import DropdownItem from "./item";
+import DropdownItem from "./item.js";
 import styles from "./styles";
 
 export default class Dropdown extends Component {
-  static defaultProps = {};
+  static defaultProps = {
+    hitSlop: { top: 6, right: 4, bottom: 6, left: 4 },
+
+    disabled: false,
+
+    data: [],
+
+    valueExtractor: ({ value } = {}, index) => value,
+    labelExtractor: ({ label } = {}, index) => label,
+    propsExtractor: () => null,
+
+    dropdownOffset: {
+      top: 32,
+      left: 0,
+    },
+
+    dropdownMargins: {
+      min: 8,
+      max: 16,
+    },
+
+    shadeOpacity: 0.12,
+
+    animationDuration: 225,
+
+    fontSize: 16,
+
+    textColor: "#FFF",
+    itemColor: "#FFF",
+    baseColor: "#FFF",
+
+    itemCount: 4,
+    itemPadding: 8,
+
+    supportedOrientations: [
+      "portrait",
+      "portrait-upside-down",
+      "landscape",
+      "landscape-left",
+      "landscape-right",
+    ],
+
+    useNativeDriver: false,
+  };
 
   blur = () => this.onClose();
   focus = this.onPress;
@@ -122,7 +165,7 @@ export default class Dropdown extends Component {
             useNativeDriver,
           }).start(() => {
             if (this.mounted && Platform.OS === "ios") {
-              let { flashScrollIndicators } = this.scroll || {};
+              let { flashScrollIndicators } = this.scroll;
 
               if (typeof flashScrollIndicators === "function") {
                 flashScrollIndicators.call(this.scroll);
@@ -286,7 +329,7 @@ export default class Dropdown extends Component {
 
     title = title == null || typeof title === "string" ? title : String(title);
 
-    return <TextInput {...props} editable={false} onChangeText={undefined} />;
+    return <TextInput {...props} editable={false} />;
   }
 
   renderItems({ item, index }) {

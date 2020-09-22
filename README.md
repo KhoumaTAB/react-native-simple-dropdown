@@ -8,6 +8,7 @@
 [![license][license-badge]]
 
 Simple dropdown on iOS and Android
+
 Based on [react-native-material-dropdown](https://github.com/n4kz/react-native-material-dropdown)
 
 ## Installation
