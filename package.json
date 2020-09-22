@@ -15,9 +15,6 @@
   "bugs": {
     "url": "https://github.com/NovaaHD/react-native-simple-dropdown/issues"
   },
-  "dependencies": {
-    "react-native-material-buttons": "^0.6.0"
-  },
   "keywords": [
     "react",
     "react-component",

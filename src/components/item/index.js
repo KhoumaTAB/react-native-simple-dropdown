@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button } from "react-native-material-buttons";
+import { TouchableOpacity } from "react-native";
 
 import styles from "../styles";
 
@@ -22,13 +22,13 @@ export default class DropdownItem extends Component {
     let { children, style, index, ...props } = this.props;
 
     return (
-      <Button
+      <TouchableOpacity
         {...props}
         style={[styles.container, style]}
         onPress={this.onPress}
       >
         {children}
-      </Button>
+      </TouchableOpacity>
     );
   }
 }
