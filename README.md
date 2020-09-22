@@ -1,11 +1,11 @@
-[npm-badge]: https://img.shields.io/npm/v/react-native-material-dropdown.svg?colorB=ff6d00
+[npm-badge]: https://img.shields.io/npm/v/react-simple-material-dropdown.svg?colorB=ff6d00
 [npm-url]: https://www.npmjs.com/package/react-native-simple-dropdown
-[license-badge]: https://img.shields.io/npm/l/react-native-material-dropdown.svg?colorB=448aff
+[license-badge]: https://img.shields.io/npm/l/react-native-simple-dropdown.svg?colorB=448aff
 
 # react-native-simple-dropdown
 
 [![npm][npm-badge]][npm-url]
-[![license][license-badge]]
+![license][license-badge]
 
 Simple dropdown on iOS and Android
 
