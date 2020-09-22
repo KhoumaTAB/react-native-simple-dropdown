@@ -20,7 +20,7 @@ export default class DropdownItem extends Component {
 
   render() {
     let { children, style, index, ...props } = this.props;
-
+    console.log();
     return (
       <TouchableOpacity
         {...props}
