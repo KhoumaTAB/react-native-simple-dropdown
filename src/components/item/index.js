@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button } from "react-native-material-buttons";
 
-import styles from "./styles";
+import styles from "../styles";
 
 export default class DropdownItem extends Component {
   static defaultProps = {
